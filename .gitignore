@@ -4,4 +4,6 @@
 *.log
 *.out
 *.bbl
+*.tdo
 *.synctex.gz
+.directory

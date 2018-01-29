@@ -10,8 +10,6 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-
-
 % moderncv themes
 \moderncvstyle{fancy}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{orange}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
@@ -31,7 +29,7 @@
 \name{Tom}{Farley}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
 \address{163 Pinnocks Way}{Oxford OX2 9DF UK}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+44~7521655595}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{+44~75216~55595}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
 \email{tom.farley@ukaea.uk}                               % optional, remove / comment the line if not wanted
@@ -41,7 +39,7 @@
 \social[github]{github.com/TomFarley}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[70pt][0.4pt]{tfarley}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{I am a plasma physicist specialising in surface negative ion production. I have experimental experience with a variety of plasma diagnostics, having performed experiments at a number of plasma physics labs...}                                 % optional, remove / comment the line if not wanted
+\quote{I am an experimental plasma physicist interested in the study of the tokamak scrape-of layer. I have experience analysing visible and infra-red camera data for the study of particle and energy transport respectively. I also have hands on experience working on small scale RF plasma experiments performing Langmuir probe measurements.}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -58,7 +56,13 @@
 
 \usepackage{todonotes}
 \usepackage{mdwlist}		% use \begin{enumerate*} etc for compact lists
-\setlength{\hintscolumnwidth}{4.2cm}  % 3.8cm
+% \usepackage{pdfpages}
+\setlength{\hintscolumnwidth}{3.8cm}  % 3.8cm, 4.2cm
+%\reversemarginpar  % todonotes in left margin
+%\setlength{\marginparwidth}{4cm}
+
+\newcommand{\myname}[1]{{\underline{T. Farley}}}
+
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
@@ -68,71 +72,75 @@
 \subsection{PhD}
 \cventry{2013--}{Fusion Doctoral Training Network}{\newline University of Liverpool}{}{}
 {\begin{itemize}%
-\item Received a broad grounding in fusion research through taught courses at The University of York% during first 6 months of PhD
+\item Received a broad grounding in fusion research through taught courses at The University of York:% during first 6 months of PhD
 \begin{itemize}
-\item Courses included MCF and ICF relevant plasma physics, diagnostic techniques, data analysis, materials science, statistics, high performance computing and project management
-\item Qualified to receive the FuseNet certificate of doctoral training
+\item Courses included MCF and ICF relevant plasma physics, diagnostic techniques, data analysis, materials science, statistics, high performance computing and project management.
+\item Qualified to receive the FuseNet certificate of doctoral training.
 \end{itemize}
 \end{itemize}}
 \subsection{Integrated Masters}
 \cventry{2009--2013}{Masters in Physics with Industrial Experience}{\newline The University of Bristol}{}{{First Class Honours}}  % arguments 3 to 6 can be left empty
 {\begin{itemize}%
-\item Performed 12 month placement at the Culham Centre for Fusion Energy resulting in a publication
-\item Masters project in density functional theory resulted in a publication
-\item Received letters of commendation from the head of the School of Physics in 1\textsuperscript{st} and 2\textsuperscript{nd} years and a \textbf{project commendation}? for my MSci project.
+\item 12 month placement at the Culham Centre for Fusion Energy resulting in a publication \cite{Arnoux2013b}.
+\item Masters project in density functional theory resulted in a publication \cite{Billington2014}.
+\item Received letters of commendation from the head of the School of Physics in 1\textsuperscript{st} and 2\textsuperscript{nd} years and a project commendation for my MSci project.
 \end{itemize}}
 
 \section{Research Experience}
 \subsection{PhD}\todo{Check fullstops consistent}
-\cventry{Jan 2015--}
+\cventry{Jan 2016--}
 {Visual camera measurements of filamentary transport in MAST}{\newline {Culham Centre for Fusion Energy}}{}{}
 {\begin{itemize}%
 \item Developed the Elzar suite of analysis tools for the identification, measurement and tracking of plasma filaments in fast camera data.
 \item Applied pseudo Langmuir probe techniques to fast camera analysis for like with like comparison to large body of literature.
-\item Joined trip to the HL-2A tokamak in Chengdu, China performing reciprocating probe measurements of the effects of fueling on scrape-off layer profiles.
+\item Joined trip to the HL-2A tokamak in Chengdu, China performing reciprocating probe measurements of the effects of fuelling on scrape-off layer profiles.
+\item Performed experiential work for PPCF paper \cite{Militello2016a} and assisted in \cite{Walkden2016}.
 \end{itemize}}
 
-\cventry{Jan--March 2014}{Measurements of negative ion surface production from diamond materials}{\newline {PIIM Loboratory, Aix-Marsielles Univeristy, Marsielles, France}}{}{}
+\cventry{Jan--March 2015}{Measurements of negative ion surface production from diamond materials}{\newline {PIIM Laboratory, Aix-Marseilles University, Marseilles, France}}{}{}
 {\begin{itemize}%
-\item Performed measurements...
-\item Contributed to publication \cite{Cartry2017}.
+\item Measured negative ions produced upon positive ion bombardment of diamond surfaces with a mass spectrometer and energy analyser. 
+%\item Performed modelling of negative ion distribution functions using SRIM code.
+\item Performed first of a kind measurements of monocrystaline diamond and extensively characterised temperature dependent properties of nanocrystaline diamond, contributing to publication \cite{Cartry2017}.
 \end{itemize}}
-
+\newpage
 \cventry{Sep--Dec 2014}
 {Characterisation of Small Negative Ion Facility}{\newline Culham Centre for Fusion Energy}
 {}
 {}{\begin{itemize}%
-\item 
-\item Contributed to publication \cite{Zacks2017}.
+\item Commissioned the Langmuir probe and high resolution visible spectrometer diagnostics on the Small Negative Ion Facility (SNIF).
+\item Identified and fixed RF earthing issues, improving performance of the plasma source.
+\item Performed spectroscopic measurements of the ion source plasma composition, contributing to publication \cite{Zacks2017}.
 \end{itemize}}
 
 \cventry{March--Sep 2014}
-{Langmuir probe and laser photodetachment measurements of electronegative plasmas}
+{Langmuir probe and laser photo-detachment measurements of electronegative plasmas}
 {\newline {University of Liverpool}}
 {}
 {}
 {
 \begin{itemize}%
-\item 
+\item Performed laser photo-detachment measurements of negative ion density in oxygen and hydrogen magnetron plasmas under various conditions.
+\item Performed langmuir probe measurements of plasma density and temperature in a weakly magnetised plasma.
 \end{itemize}
 }
 
 \subsection{Masters Project}\todo{format chemicals}
 \cventry{Sep 2012--Sep 2013}
-{DFT calculations of the superconducting properties of the YIr2Si2 and LaIr2Si2 polymorphs}
+{DFT calculations of the superconducting properties of the \texorpdfstring{YIr\textsubscript{2}Si\textsubscript{2}}{YIr2Si2} polymorphs}
 {\newline \emph{University of Bristol}}
 {}
 {}
 {\begin{itemize}%
-\item Performed Density Functional Theory (DFT) ab. initio calculations of the superconducting properties of the YIr2Si2 and LaIr2Si2 polymorphs.
-\item Work resulted in a publication \cite{Billington2014}.
+\item Performed Density Functional Theory (DFT) \textit{ab initio} calculations of the band structure and Fermi surface properties of the polymorphs of \texorpdfstring{YIr\textsubscript{2}Si\textsubscript{2}}{YIr2Si2}.
+\item Predicted a superconducting transition temperature of $T_c= 2.58$K explained by intermediate-strength conventional electron-phonon coupling, resulting in a publication \cite{Billington2014}.
 \end{itemize}}
 \subsection{Undergraduate}
-\cventry{}
-{Infra-red measuremnts of scrape-off layer power decay length in JET}
+\cventry{Aug 2011--Aug 2012}
+{Infra-red measurements of scrape-off layer power decay length in JET}
 {\newline Culham Centre for Fusion Energy}{}{}
 {\begin{itemize}%
-\item Developed the tools required to measure the plasma scrape-off layer power decay length from infra-red images of the interior of the JET tokomak
+\item Developed the tools required to measure the plasma scrape-off layer power decay length from infra-red images of the interior of the JET tokomak.
 %\item Performed data analysis of large dedicated pulse database
 %\item Learnt and became proficient in the IDL programing language
 %\item Worked with large degree of independence with limited contact with supervisor
@@ -140,17 +148,17 @@
 %\item Maintained detailed log of work for discussing progress and challenges with supervisor
 %\item Gained experience working in an international scientific research environment
 %\item Produced novel results which are influencing the current ITER design review
-\item Results led to a publication in Nuclear Fusion \cite{Arnoux2013b} and were presented by supervisor at 2012 IAEA conference.
-\item Tools are now being used by others and have initiated similar measurements on the COMPASS tokamak
+\item Analysed a large dedicated pulse database, the results of which led to a publication in Nuclear Fusion \cite{Arnoux2013b} and were presented by my supervisor at the 2012 IAEA conference \cite{IAEA_synopsis}.
+\item Tools are now used by others and have initiated similar measurements on the COMPASS tokamak.
 \end{itemize}}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 \nocite{*}
-\bibliographystyle{plainyr}
-\bibliography{TFarley_publications}                        % 'publications' is the name of a BibTeX file
-
+\bibliographystyle{cv_tfarley_custom_bib}   % cv_tfarley_custom_bib, unsrt
+\bibliography{TFarley_publications2}                        % 'publications' is the name of a BibTeX file
+\todo{Fix bibfile, proceedings name etc}
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
 %\nocitebook{book1,book2}
@@ -173,18 +181,17 @@
 
 \section{Conferences and Workshops}
 \subsection{Oral}
-\cventry{May? 2017}
-{Fusion Frontiers and Interfaces Workshop)}{York}{\newline Title}{}
-{}
-\subsection{Posters} \todo{capitalisation}
+\cventry{May 2017}
+{Fusion Frontiers and Interfaces Workshop}{York}{\newline Fast Camera Analysis of Plasma Filaments}{}{}
+\subsection{Posters}
 \cventry{Oct 2017}
-{59th Annual Meeting of the APS Division of Plasma Physics)}{Milwaukee, Wisconsin, USA}{\newline Fast Camera Analusis of Plasma Filaments}{}
+{59th Annual Meeting of the APS Division of Plasma Physics)}{\newline Milwaukee, Wisconsin, USA}{\newline Fast Camera Analysis of Plasma Filaments}{}
 {}
 \cventry{April 2017}
 {44th IOP Plasma Physics Conference}{Oxford, UK}{\newline An Algorithm for the Analysis of Filaments in Fast Camera Data}{}
-{}\todo{frontiers details?}
-\cventry{May? 2015} 
-{Fusion Frontiers and Interfaces Workshop}{York, UK}{\newline Title?}{}
+{}
+\cventry{May 2016} 
+{Fusion Frontiers and Interfaces Workshop}{York, UK}{\newline Pseudo Langmuir Probe Analysis  of Filaments in MAST Using Fast Cameras}{}
 {}
 \cventry{Nov 2014}
 {FuseNet PhD Workshop}{Lisbon, Portugal}{\newline The SNIFF Caesium Free Negative Ion Source}{}
@@ -192,30 +199,29 @@
 \cventry{Oct 2014}
 {4th International Symposium on Negative Ions, Beams and Sources}{IPP Garching, Germany}{\newline Caesium Free Negative Ion Sources}{}
 {}
-\cventry{May? 2014}
-{Fusion Frontiers and Interfaces Workshop}{York, UK}{\newline Title?}{}
+\cventry{May 2014}
+{Fusion Frontiers and Interfaces Workshop}{York, UK}{\newline Laser Photo-detachment Measurements of Negative Ion Density}{}
 {}
 
-\section{Responcibilities}
+\section{Responsibilities}
 
 \subsection{Groups}
 \cventry{2017--}
 {Software Developers Working Group}{Member of the Culham Software Developers Working Group (SDWG)}{}{}
-{Sitewide body responsible for coordinating resources for software developers
+{Site wide body responsible for coordinating resources for software developers.
 }
 \subsection{Meetings}
 \cventry{2017--}
-{Coding Discssion Group}{Founded and coordinate the Culham Coding Discssion Group (CDG)}{}{}{Fortnightly meetings with online resources to share programming knowledge, expertese and resources.
+{Coding Discussion Group}{Founder and coordinator of the Culham Coding Discussion Group (CDG)}{}{}{Fortnightly meetings with online resources to share programming knowledge, expertise and resources.
 }
 \subsection{Supervision}
 \cventry{4 months}
 {Masters student}{\normalfont{Supervised masters student from University of Rome, Italy working on filament tracking for masters project}}{}{}{}
 \cventry{3 months}
-{Undergraduate project}{\normalfont{Supervised 3rd year undergraduate student from University of ???, Italy working on filament detection for BSc project}
-}{}{}{}
+{Undergraduate project}{\normalfont{Supervised 3rd year undergraduate student from University of Cagliari, Italy working on filament detection for BSc project}}{}{}{}
 
 \section{Outreach}
-\cvitem{MAST-U tours}{Frequenty lead MAST-U tours for visitors, open evening and open day attendees}
+\cvitem{MAST-U tours}{Frequently lead MAST-U tours for visitors, open evening and open day attendees}
 \cvitem{GCSE work experience}{Supervised GCSE work experience student on placement at CCFE}
 \cvitem{Sun dome}{Helped with sun dome science workshop at local primary school}
 
@@ -228,27 +234,28 @@
 %\cvlistitem{ Experience working on group projects involving remote collaboration and project management}
 \cvlistitem{\textbf{Experimental experience}
 \begin{itemize}
-\item Experience working with r.f. paslam sources, compressed gas, vacuum systems and pumps and lasers
-\item Experience making plasma measurements with langmuir probes, mass spectrometers and visible spectrometers
-\item Experience developing analysis tools to process data
+\item Experience working with r.f. plasma sources, compressed gas, vacuum systems and pumps and lasers.
+\item Experience performing plasma measurements with langmuir probes, mass spectrometers and visible spectrometers.
+%\item Experience developing analysis tools to process data
 \end{itemize} }
 \cvlistitem{\textbf{Programming experience}
 \begin{itemize}
-\item Experienced python programmer, applying object orrientated principals
-\item Experience with C, MATLAB and IDL 
-\item Familiarity with Bash scripting, Perl, Visual Basic and Fortran. 
-\item Familiar with high performance computing concepts and techniques. 
-\item Regular user of the LaTeX typesetting language
+\item Experienced python programmer, OOP, TDD and HPC principals.
+\item Experience with C, IDL and MATLAB.
+\item Familiarity with C++, Bash scripting, Perl, Visual Basic and Fortran. 
+%\item Familiar with high performance computing concepts and techniques. 
+\item Experienced user of git version control and the the \LaTeX~typesetting language.
 %\item Proficient user of MS office applications
 \end{itemize} }
 \cvlistitem{\textbf{Organisational skills}
 \begin{itemize}
-\item Planning...
+\item Excellent organisational skill, drawing up plans, maintaining detailed records and managing time effectively.
 \end{itemize} }
 \cvlistitem{\textbf{Communication skills}
 \begin{itemize}
-\item Able to communicate technical information in a competent and accessible manner
-\end{itemize} }
+\item Communicate technical information in a competent and accessible manner, both verbally and in writing.
+\item Perform well in a team, integrating readily into different teams and environments. 
+\end{itemize}}
 %\cvlistitem{ Regular user of linux with familiarity with shell scripting}
 %\cvlistitem{Presentational skills to communicate technical information in a competent and accessible manner}
 
@@ -257,43 +264,73 @@
 \cventry{2013--}
 {\normalfont{Member of the \textbf{Institute of Physics}}}{}{}{}{}
 \cventry{2017--}
-{\normalfont{Member of the \textbf{Americal Physical Society}}}{}{}{}{}
+{\normalfont{Member of the \textbf{American Physical Society}}}{}{}{}{}
 
 \section{References}
-\todo{update}
+
 \begin{cvcolumns}
-  \cvcolumn{Professor Antony Carrington}{
+\cvcolumn{Prof.James Bradley}{
+Professor and Head of Group \\
+Department of Electrical Engineering and Electronics\\
+University of Liverpool \\
+Liverpool, L69 3GJ, UK \\
+\emailsymbol J.W.Bradley@liverpool.ac.uk \\
+\fixedphonesymbol +44 (0)151 794 4545}
+
+\cvcolumn{Dr James Harrison}{
+Deputy Head of Tokamak Science \\
+Culham Centre for Fusion Energy \\
+Office: D3/2.04	  \\
+Culham Science Centre \\
+Abingdon, OX14 3DB, UK \\
+\emailsymbol James.Harrison@ukaea.uk \\
+\fixedphonesymbol +44(0) 1235 46 6209}
+\end{cvcolumns}
+\todo{update}
+
+\begin{cvcolumns}
+\cvcolumn{Professor Antony Carrington}{
 Personal tutor \\
 HH Wills Physics Laboratory \\
 University of Bristol \\
 Tyndall Avenue \\
 Bristol \\
 BS8 1TL \\
-A.Carrington@bristol.ac.uk \\
-T +44 (0)117 928 8713}
-  \cvcolumn{Dr Gilles Arnoux}
-  {
-Section Leader: \\Viewing Systems and Thermal Measurements \\
-Plasma Boundary Group, JET Diagnostics Department \\
-Culham Centre for Fusion Energy \\
-Bldg/Office: K1/1/14 \\
-Culham Science Centre \\
-Abingdon, OX14 3DB, UK \\
-gilles.arnoux@ccfe.ac.uk \\
-T +44(0) 1235 46 4809}
+\emailsymbol A.Carrington@bristol.ac.uk \\
+\fixedphonesymbol +44 (0)117 928 8713}
+
+%\cvcolumn{Dr Fulvio Militello}
+%  {Head of the Exhaust Topic Area \\
+%Culham Centre for Fusion Energy \\
+%Office: D3/1.76	  \\
+%Culham Science Centre \\
+%Abingdon, OX14 3DB, UK \\
+%\emailsymbol fulvio.militello@ukaea.ac.uk \\
+%\fixedphonesymbol +44(0) 1235 46 6253}
 \end{cvcolumns}
-\todo{update}
-\begin{cvcolumns}
-  \cvcolumn{}{}
-  \cvcolumn{Dr Fulvio Militello}
-  {
-Culham Centre for Fusion Energy \\
-Bldg/Office: K1/1/14 \\
-Culham Science Centre \\
-Abingdon, OX14 3DB, UK \\
-gilles.arnoux@ccfe.ac.uk \\
-T +44(0) 1235 46 4809}
-\end{cvcolumns}
+
+
+%\begin{cvcolumns}
+%\cvcolumn{Dr James Harrison}{
+%Deputy Head of Tokamak Science \\
+%Culham Centre for Fusion Energy \\
+%Office: D3/2.04	  \\
+%Culham Science Centre \\
+%Abingdon, OX14 3DB, UK \\
+%\emailsymbol James.Harrison@ukaea.uk \\
+%\fixedphonesymbol +44(0) 1235 46 6209}
+%  
+%\cvcolumn{Dr Gilles Arnoux}
+%  {
+%Section Leader: \\Viewing Systems and Thermal Measurements \\
+%Plasma Boundary Group, JET Diagnostics Department \\
+%Culham Centre for Fusion Energy \\
+%Bldg/Office: K1/1/14 \\
+%Culham Science Centre \\
+%Abingdon, OX14 3DB, UK \\
+%\emailsymbol gilles.arnoux@ccfe.ac.uk \\
+%\fixedphonesymbol +44(0) 1235 46 4809}
+%\end{cvcolumns}
 
 \clearpage
 %-----       letter       ---------------------------------------------------------
@@ -305,17 +342,13 @@ T +44(0) 1235 46 4809}
 \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
 
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+I should like to express my interest in the role of \textit{Scrape-Off Layer Turbulence Physicist}, for which I feel I am well suited...
 
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-Albert Einstein discovered that $e=mc^2$ in 1905.
-
-\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
 
 \makeletterclosing
+
+%\listoftodos
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
