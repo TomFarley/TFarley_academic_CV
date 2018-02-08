@@ -386,9 +386,9 @@ FUNCTION {format.names}
       't :=
       nameptr #1 >
         {
-          nameptr #8
+          nameptr #5
           #1 + =
-          numnames #8
+          numnames #5
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -1266,9 +1266,9 @@ FUNCTION {sort.format.names}
       format.name$ 't :=
       nameptr #1 >
         {
-          nameptr #8
+          nameptr #5
           #1 + =
-          numnames #8
+          numnames #5
           > and
             { "others" 't :=
               #1 'namesleft := }
